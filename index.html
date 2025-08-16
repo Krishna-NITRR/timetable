@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Work Timetable - GATE Success</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="timetable-header">
+            <h1 class="main-title">Deep Work Timetable</h1>
+            <p class="subtitle">Focused 3 Months to GATE Success</p>
+            <button class="btn btn--primary print-btn" onclick="printTimetable()">
+                📄 Print Timetable
+            </button>
+        </header>
+
+        <!-- Legend Section -->
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color deep-work"></div>
+                <span>Deep Work (GATE Prep)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color class-time"></div>
+                <span>Classes</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color secondary-work"></div>
+                <span>Internship/ML Study</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color routine"></div>
+                <span>Breaks & Meals</span>
+            </div>
+        </div>
+
+        <!-- Timetable Grid -->
+        <div class="timetable-container">
+            <div class="day-column">
+                <div class="day-header">Monday</div>
+                <div class="day-schedule">
+                    <div class="time-slot deep-work">
+                        <div class="time">6:30-10:30 AM</div>
+                        <div class="activity">Morning Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">10:30-11:00 AM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Refreshment</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">11:00 AM-1:00 PM</div>
+                        <div class="activity">Midday Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">1:00-2:10 PM</div>
+                        <div class="activity">Lunch Break</div>
+                        <div class="description">Meal & Rest</div>
+                    </div>
+                    <div class="time-slot class-time">
+                        <div class="time">2:10-5:30 PM</div>
+                        <div class="activity">Classes</div>
+                        <div class="description">Academic Classes</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">5:30-6:00 PM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Snack</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">6:00-9:00 PM</div>
+                        <div class="activity">Evening Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">9:00-9:30 PM</div>
+                        <div class="activity">Dinner</div>
+                        <div class="description">Meal & Relaxation</div>
+                    </div>
+                    <div class="time-slot secondary-work">
+                        <div class="time">9:30-10:30 PM</div>
+                        <div class="activity">Night Session</div>
+                        <div class="description">Internship/ML Study</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Tuesday</div>
+                <div class="day-schedule">
+                    <div class="time-slot deep-work">
+                        <div class="time">6:30-9:50 AM</div>
+                        <div class="activity">Morning Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot class-time">
+                        <div class="time">9:50 AM-5:30 PM</div>
+                        <div class="activity">Classes</div>
+                        <div class="description">Academic Classes (with breaks)</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">5:30-6:00 PM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Snack</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">6:00-9:00 PM</div>
+                        <div class="activity">Evening Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">9:00-9:30 PM</div>
+                        <div class="activity">Dinner</div>
+                        <div class="description">Meal & Relaxation</div>
+                    </div>
+                    <div class="time-slot secondary-work">
+                        <div class="time">9:30-10:30 PM</div>
+                        <div class="activity">Night Session</div>
+                        <div class="description">Internship/ML Study</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Wednesday</div>
+                <div class="day-schedule">
+                    <div class="time-slot deep-work">
+                        <div class="time">6:30-9:00 AM</div>
+                        <div class="activity">Morning Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot class-time">
+                        <div class="time">9:15 AM-5:30 PM</div>
+                        <div class="activity">Classes</div>
+                        <div class="description">Academic Classes (with breaks)</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">5:30-6:00 PM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Snack</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">6:00-9:00 PM</div>
+                        <div class="activity">Evening Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">9:00-9:30 PM</div>
+                        <div class="activity">Dinner</div>
+                        <div class="description">Meal & Relaxation</div>
+                    </div>
+                    <div class="time-slot secondary-work">
+                        <div class="time">9:30-10:30 PM</div>
+                        <div class="activity">Night Session</div>
+                        <div class="description">Internship/ML Study</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Thursday</div>
+                <div class="day-schedule">
+                    <div class="time-slot deep-work">
+                        <div class="time">6:30-10:30 AM</div>
+                        <div class="activity">Morning Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">10:30-11:00 AM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Refreshment</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">11:00 AM-1:00 PM</div>
+                        <div class="activity">Midday Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">1:00-2:30 PM</div>
+                        <div class="activity">Lunch Break</div>
+                        <div class="description">Meal & Rest</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">2:30-5:30 PM</div>
+                        <div class="activity">Afternoon Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">5:30-6:00 PM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Snack</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">6:00-9:00 PM</div>
+                        <div class="activity">Evening Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">9:00-9:30 PM</div>
+                        <div class="activity">Dinner</div>
+                        <div class="description">Meal & Relaxation</div>
+                    </div>
+                    <div class="time-slot secondary-work">
+                        <div class="time">9:30-10:30 PM</div>
+                        <div class="activity">Night Session</div>
+                        <div class="description">Internship/ML Study</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Friday</div>
+                <div class="day-schedule">
+                    <div class="time-slot deep-work">
+                        <div class="time">6:30-10:30 AM</div>
+                        <div class="activity">Morning Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">10:30-11:00 AM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Refreshment</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">11:00 AM-1:00 PM</div>
+                        <div class="activity">Midday Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">1:00-2:00 PM</div>
+                        <div class="activity">Lunch Break</div>
+                        <div class="description">Meal & Rest</div>
+                    </div>
+                    <div class="time-slot class-time">
+                        <div class="time">2:00-5:30 PM</div>
+                        <div class="activity">Classes</div>
+                        <div class="description">Academic Classes</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">5:30-6:00 PM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Snack</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">6:00-9:00 PM</div>
+                        <div class="activity">Evening Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">9:00-9:30 PM</div>
+                        <div class="activity">Dinner</div>
+                        <div class="description">Meal & Relaxation</div>
+                    </div>
+                    <div class="time-slot secondary-work">
+                        <div class="time">9:30-10:30 PM</div>
+                        <div class="activity">Night Session</div>
+                        <div class="description">Internship/ML Study</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Saturday</div>
+                <div class="day-schedule">
+                    <div class="time-slot deep-work">
+                        <div class="time">6:30-10:30 AM</div>
+                        <div class="activity">Morning Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">10:30-11:00 AM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Refreshment</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">11:00 AM-1:00 PM</div>
+                        <div class="activity">Midday Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">1:00-2:30 PM</div>
+                        <div class="activity">Lunch Break</div>
+                        <div class="description">Meal & Rest</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">2:30-5:30 PM</div>
+                        <div class="activity">Afternoon Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">5:30-6:00 PM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Snack</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">6:00-9:00 PM</div>
+                        <div class="activity">Evening Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">9:00-9:30 PM</div>
+                        <div class="activity">Dinner</div>
+                        <div class="description">Meal & Relaxation</div>
+                    </div>
+                    <div class="time-slot secondary-work">
+                        <div class="time">9:30-10:30 PM</div>
+                        <div class="activity">Night Session</div>
+                        <div class="description">Internship/ML Study</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Sunday</div>
+                <div class="day-schedule">
+                    <div class="time-slot deep-work">
+                        <div class="time">6:30-10:30 AM</div>
+                        <div class="activity">Morning Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">10:30-11:00 AM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Refreshment</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">11:00 AM-1:00 PM</div>
+                        <div class="activity">Midday Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">1:00-2:30 PM</div>
+                        <div class="activity">Lunch Break</div>
+                        <div class="description">Meal & Rest</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">2:30-5:30 PM</div>
+                        <div class="activity">Afternoon Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">5:30-6:00 PM</div>
+                        <div class="activity">Break</div>
+                        <div class="description">Rest & Snack</div>
+                    </div>
+                    <div class="time-slot deep-work">
+                        <div class="time">6:00-9:00 PM</div>
+                        <div class="activity">Evening Deep Work</div>
+                        <div class="description">GATE Prep</div>
+                    </div>
+                    <div class="time-slot routine">
+                        <div class="time">9:00-9:30 PM</div>
+                        <div class="activity">Dinner</div>
+                        <div class="description">Meal & Relaxation</div>
+                    </div>
+                    <div class="time-slot secondary-work">
+                        <div class="time">9:30-10:30 PM</div>
+                        <div class="activity">Night Session</div>
+                        <div class="description">Internship/ML Study</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inspirational Quotes -->
+        <footer class="quotes-section">
+            <div class="quote">
+                "Success is where preparation and opportunity meet." - Bobby Unser
+            </div>
+            <div class="quote">
+                "The expert in anything was once a beginner." - Helen Hayes
+            </div>
+            <div class="quote">
+                "Focus on being productive instead of busy." - Tim Ferriss
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
